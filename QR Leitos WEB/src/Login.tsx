@@ -1,13 +1,29 @@
 import { useState } from 'react';
+import { getAuth, signInWithEmailAndPassword } from "firebase/auth";
+
 import './styles.css'
+import './firebase/database.js'
 
 export default function Login() {
 
     const [email, setEmail] = useState("")
     const [senha, setSenha] = useState("")
+    const [errorLogin, setErrorLogin] = useState(false)
+
+    const loginFirebase = () => {
+        const auth = getAuth();
+        signInWithEmailAndPassword(auth, email, senha)
+            .then((userCredential) => {
+                const user = userCredential.user;
+                console.log("LOGADO")
+            })
+            .catch((error) => {
+                setErrorLogin(true);
+                console.log("USUÁRIO OU SENHA ERRADA")
+            });
+    };
 
     return (
-
         <div className="container">
             <div className="container-login">
                 <div className="wrap-login">
@@ -33,7 +49,7 @@ export default function Login() {
                         </div>
 
                         <div className="container-login-form-btn">
-                            <button className="login-form-btn"> Login </button>
+                            <button className="login-form-btn" onClick={loginFirebase}> Login </button>
                         </div>
 
                         <div className="singup">
