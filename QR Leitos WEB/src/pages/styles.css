@@ -174,3 +174,93 @@
     border-bottom: 1px solid #000000;
     border-radius: 10px;
 }
+
+.campo {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    direction: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.input {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: 96vw;
+    height: 5vh;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 12pt;
+}
+
+.sub-input {
+    display: flex;
+    flex-direction: row;
+    width: 15vw;
+    height: 5vh;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 12pt;
+}
+
+.description {
+    font-weight: bold;
+    display: flex;
+    font-size: 14pt;
+    padding-bottom: 10px;
+    padding-left: 2vw;
+}
+
+.div-sub-description {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.sub-description {
+    padding-right: 10px;
+    display: flex;
+    vertical-align: middle;
+    font-size: 14pt;
+    padding-bottom: 10px;
+    padding-left: 2vw;
+}
+
+.button-div {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.button-add-new {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    width: 20vw;
+    height: 7vh;
+    border-radius: 30px;
+    font-size: 12pt;
+    cursor: pointer;
+    background-color: rgb(0, 255, 60);
+    font-weight: bold;
+}
+
+.button-cancel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    width: 20vw;
+    height: 7vh;
+    border-radius: 30px;
+    font-size: 12pt;
+    cursor: pointer;
+    background-color: rgb(255, 213, 0);
+    font-weight: bold;
+}
