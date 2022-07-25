@@ -81,38 +81,6 @@ export default function Leitos() {
                 <div>
                     {leitos.map((leito) => (<Leito key={leito.id} value={leito} />))}
                 </div>
-
-                {/* <FlatList
-                    list={leitos}
-                    renderItem={({ item }) => {
-                        return (
-                            <div className='content'>
-                                key={item.codigo}
-                                <div className='head-leitos'>
-                                    <a>{item}</a>
-                                </div>
-                                <div className='head-estado'>
-                                    <a></a>
-                                </div>
-                                <div className='head-lastmod'>
-                                    <a></a>
-                                </div>
-                            </div>
-                        );
-                    }
-                    } /> */}
-                {/* 
-            <div className='content'>
-                    <div className='head-leitos'>
-                        <a></a>
-                    </div>
-                    <div className='head-estado'>
-                        <a></a>
-                    </div>
-                    <div className='head-lastmod'>
-                        <a></a>
-                    </div>
-                </div> */}
             </div>
         </div >
     )
