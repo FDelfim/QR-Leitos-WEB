@@ -1,7 +1,5 @@
 import React from 'react';
 import { useEffect, useState } from 'react';
-import FlatList from 'flatlist-react';
-import { FixedSizeList as List } from 'react-window';
 
 import './styles.css'
 
@@ -51,7 +49,6 @@ export default function Leitos() {
     return (
         <div>
             <NavBar />
-
             <div>
                 <div className="titulo">
                     <h1>Leitos</h1>
@@ -63,6 +60,9 @@ export default function Leitos() {
 
                     <button className='button'>
                         Pesquisar
+                    </button>
+                    <button className='button-add'>
+                        Adicionar Novo Leito
                     </button>
                 </div>
 
